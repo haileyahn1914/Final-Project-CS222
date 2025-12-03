@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IslandEats - Restaurants</title>
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/script.js" defer></script>
+
+</head>
+<body>
+<header>
+    <h1>IslandEats</h1>
+    <nav>
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="restaurants.html">Restaurants</a>
+            <a href="groceries.html">Groceries</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="filters">
+    <h2>Filter by Category</h2>
+    <button type="button" data-filter="vegan">Vegan</button>
+    <button type="button" data-filter="gluten-free">Gluten-Free</button>
+    <button type="button"data-filter="breakfast">Breakfast</button>
+    <button type="button"data-filter="desserts">Desserts</button>
+    <button type="button"data-filter="drinks">Drinks</button>
+    <button type="button"data-filter="italian">Italian</button>
+    <button type="button"data-filter="asian">Asian</button>
+    <button type="button"data-filter="american">American</button>
+    <button type="button"data-filter="fast-food">Fast Food</button>
+    <button type="button"data-filter="chamorro">Chamorro</button>
+</section>
+
+<section class="restaurant-list">
+    <div class="restaurant-card" data-category="italian">
+        <img src="images/angry penne.jpg" alt="Italian">
+        <h3>Angry Penne</h3>
+        <p>Cuisine: Italian</p>
+        <p>Delivery Fee: $3-6</p>
+        <p>Delivery Hours: 11:00 AM - 10:00 PM</p>
+        <p>Minimum Order: $20</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Any special requests? "></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+
+    </div>
+    <div class="restaurant-card" data-category="asian">
+        <img src="images/sushi spot.jpg" alt="Japanese">
+        <h3>Sushi Spot</h3>
+        <p>Cuisine: Japanese</p>
+        <p>Delivery Fee: $3-6</p>
+        <p>Delivery Hours: 11:00 AM - 10:00 PM</p>
+        <p>Minimum Order: $25</p>
+        <button class="order-btn">Place Order</button>
+
+<div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+
+    </div>
+    <div class="restaurant-card" data-category="asian,vegan">
+        <img src="images/keto thai.jpg" alt="Asian Vegan">
+        <h3>Keto Thai</h3>
+        <p>Cuisine: Thai, Vegan</p>
+        <p>Delivery Fee: $3-6</p>
+        <p>Delivery Hours: 11:00 AM - 8:00 PM </p>
+        <p>Minimum Order: $18</p>
+        <button class="order-btn">Place Order</button>
+
+         <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="american">
+        <img src="images/inas kitchen.jpg" alt="American">
+        <h3>Inas Kitchen</h3>
+        <p>Cuisine: American Fusion</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 11:00 AM - 9:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="asian,gluten-free">
+        <img src="images/ket's kitchen.jpg" alt="Asian Gluten-Free">
+        <h3>Ket's Kitchen</h3>
+        <p>Cuisine: Thai, Gluten-Free</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 11:00 AM - 9:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="breakfast,chamorro,vegan">
+        <img src="images/the shack.png" alt="Chamorro">
+        <h3>The Shack</h3>
+        <p>Cuisine: Chamorro</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="breakfast">
+        <img src="images/java joes.png" alt="Asian">
+        <h3>Java Joe's<h/3>
+        <p>Cuisine: Indian</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="desserts,drinksm,gluten-free">
+        <img src="images/ohas.jpg" alt="Dessert Drinks">
+        <h3>Ohas Cafe<h/3>
+        <p>Cuisine: Dessert & Drinks</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 5:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="desserts,drinks">
+        <img src="images/cha.jpg" alt="Dessert Drinks">
+        <h3>Cha Cafe<h/3>
+        <p>Cuisine: Dessert & Drinks</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="fast-food">
+        <img src="images/pizza hut.jpg" alt="Fast Food">
+        <h3>Pizza Hut<h/3>
+        <p>Cuisine: Fast Food</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="fast-food">
+        <img src="images/mcdonalds.png" alt="Fast Food">
+        <h3>Mcdonald's<h/3>
+        <p>Cuisine: Fast Food</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div> 
+    </div>
+    <div class="restaurant-card" data-category="fast-food">
+        <img src="images/subway.png" alt="Fast Food">
+        <h3>Subway<h/3>
+        <p>Cuisine: Fast Food</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div> 
+    </div>
+    <div class="restaurant-card" data-category="fast-food">
+        <img src="images/kfc.png" alt="Fast Food">
+        <h3>KFC<h/3>
+        <p>Cuisine: Fast Food</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="fast-food">
+        <img src="images/taco bell.jpg" alt="Fast Food">
+        <h3>Taco Bell<h/3>
+        <p>Cuisine: Fast Food</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 3:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="desserts,drinks,gluten-free">
+        <img src="images/sweet lane.jpg" alt="Dessert Drinks">
+        <h3>Sweet Lane Cafe<h/3>
+        <p>Cuisine: Dessert & Drinks</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 5:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="asian,vegan">
+        <img src="images/namdaemoon.jpg" alt="Asian">
+        <h3>Namdaemoon<h/3>
+        <p>Cuisine: Korean</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 7:00 AM - 5:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="american">
+        <img src="images/american.png" alt="American">
+        <h3>American Pizza & Grill</h3>
+        <p>Cuisine: American Fusion</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 11:00 AM - 9:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed.Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="american">
+        <img src="images/country hose.jpg" alt="American">
+        <h3>Country House</h3>
+        <p>Cuisine: American</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 11:00 AM - 9:00 PM </p>
+        <p>Minimum Order: $15</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="chamorro">
+        <img src="images/bistro.jpg" alt="Chamorro">
+        <h3>Bistro Marianas</h3>
+        <p>Cuisine: Chamorro</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="vegan">
+        <img src="images/everest.jpg" alt="Asian">
+        <h3>Everest</h3>
+        <p>Cuisine: Indian</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="asian">
+        <img src="images/himawari.png" alt="Asian">
+        <h3>Himawari</h3>
+        <p>Cuisine: Japanese</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="asian">
+        <img src="images/kanto.jpg" alt="Asian">
+        <h3>Kanto Diyes</h3>
+        <p>Cuisine: Filipino</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+    <div class="restaurant-card" data-category="chamorro">
+        <img src="images/surf.jpg" alt="Chamorro">
+        <h3>Surf Club</h3>
+        <p>Cuisine: Chamorro</p>
+        <p>Delivery Fee: $5-7</p>
+        <p>Delivery Hours: 8:00 AM - 2:00 PM </p>
+        <p>Minimum Order: $10</p>
+        <button class="order-btn">Place Order</button>
+
+        <div class="order-form" style="display:none;">
+            <input type="text" placeholder="Dish Name">
+            <input type="number" placeholder="Quantity" min="1">
+            <textarea placeholder="Special Instructions"></textarea>
+            <button class="submit-order">Submit Order</button>
+            <p class="confirmation" style="color:green; display:none;">Thank you! Your order has been placed. Call or pay when delivery arrives.</p>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 IslandEats CNMI</p>
+</footer>
+
+<script>
+// Category filter
+function filterCategory(category) {
+    const cards = document.querySelectorAll('.restaurant-card');
+    cards.forEach(card => {
+        const categories = card.dataset.category.split(',').map(c => c.trim().toLowerCase());
+        if(category === 'all' || categories.includes(category.toLowerCase())) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Add event listeners to category buttons
+document.querySelectorAll('.filters button').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const category = btn.dataset.filter;
+        filterCategory(category);
+    });
+});
+
+// Search query from Home page
+const urlParams = new URLSearchParams(window.location.search);
+const searchQuery = urlParams.get('search');
+
+if(searchQuery) {
+    const cards = document.querySelectorAll('.restaurant-card');
+    cards.forEach(card => {
+        const name = card.querySelector('h3').textContent.toLowerCase();
+        const cuisine = card.querySelector('p').textContent.toLowerCase();
+        if(name.includes(searchQuery.toLowerCase()) || cuisine.includes(searchQuery.toLowerCase())) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Option 1: Inline order form toggle & submit
+document.querySelectorAll('.restaurant-card').forEach(card => {
+    const orderBtn = card.querySelector('.order-btn');
+    const form = card.querySelector('.order-form');
+    const submitBtn = card.querySelector('.submit-order');
+    const confirmation = card.querySelector('.confirmation');
+
+    orderBtn.addEventListener('click', () => {
+        form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    });
+
+    submitBtn.addEventListener('click', () => {
+        confirmation.style.display = 'block';
+        card.querySelector('.dish').value = '';
+        card.querySelector('.quantity').value = '';
+        card.querySelector('.instructions').value = '';
+    });
+});
+</script>
+
+</body>
+</html>

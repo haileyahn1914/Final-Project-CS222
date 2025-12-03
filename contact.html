@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - SaipanToGo</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Contact Us</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="groceries.html">Groceries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<section class="contact-form">
+    <h2>Send Us a Message</h2>
+    <form id="contactForm">
+        <input type="text" placeholder="Your Name" id="name" required>
+        <input type="email" placeholder="Your Email" id="email" required>
+        <textarea placeholder="Your Message" id="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <div id="formResponse" style="margin-top:1.5rem; font-weight: bold;"></div>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 IslandEats CNMI</p>
+</footer>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        // Placeholder: normally send to email service
+        document.getElementById('formResponse').textContent = "Thank you so much for your message! We'll get back to you soon. :) ";
+        this.reset();
+    } else {
+        document.getElementById('formResponse').textContent = "Please fill in all fields.";
+    }
+});
+</script>
+</body>
+</html>
